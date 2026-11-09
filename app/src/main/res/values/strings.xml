@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">MYTripBuddyMB</string>
+    <string name="welcome_to_trip_buddy">Welcome to TRIP BUDDY</string>
+    <string name="title_activity_memories">MemoriesActivity</string>
+</resources>

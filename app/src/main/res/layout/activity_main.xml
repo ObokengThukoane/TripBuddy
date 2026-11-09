@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar2"
+        android:layout_width="429dp"
+        android:layout_height="89dp"
+        android:background="#00BFA5"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="?attr/actionBarTheme"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteY="0dp" />
+
+    <TextView
+        android:id="@+id/welcomeText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:text="welcome, username "
+        android:textColor="#FFFCFC"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.021"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/PLNBTN"
+        android:layout_width="0dp"
+        android:layout_height="150dp"
+        android:layout_marginTop="108dp"
+        android:backgroundTint="#00BFA5"
+        android:text="Plan Trip"
+        android:textAllCaps="false"
+        android:textColor="@android:color/white"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/VWBTN"
+        android:layout_width="147dp"
+        android:layout_height="395dp"
+        android:layout_marginEnd="8dp"
+        android:backgroundTint="#00BFA5"
+        android:text="Gallery"
+        android:textAllCaps="false"
+        android:textColor="@android:color/white"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toStartOf="@id/CreateMemoryButton"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/PLNBTN" />
+
+
+    <Button
+        android:id="@+id/CreateMemoryButton"
+        android:layout_width="152dp"
+        android:layout_height="399dp"
+        android:layout_marginStart="8dp"
+        android:backgroundTint="#00BFA5"
+        android:text="Create Memory"
+        android:textAllCaps="false"
+        android:textColor="@android:color/white"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/VWBTN"
+        app:layout_constraintTop_toBottomOf="@id/PLNBTN" />
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="107dp"
+        android:layout_height="49dp"
+        android:layout_marginStart="152dp"
+        android:layout_marginEnd="152dp"
+        app:layout_constraintBottom_toBottomOf="@+id/PLNBTN"
+        app:layout_constraintEnd_toEndOf="@+id/PLNBTN"
+        app:layout_constraintStart_toStartOf="@+id/PLNBTN"
+        app:layout_constraintTop_toTopOf="@+id/PLNBTN"
+        app:layout_constraintVertical_bias="0.881"
+        app:srcCompat="@drawable/_024"
+        tools:ignore="MissingConstraints" />
+
+    <ImageView
+        android:id="@+id/imageView4"
+        android:layout_width="108dp"
+        android:layout_height="139dp"
+        android:layout_marginStart="22dp"
+        app:layout_constraintBottom_toBottomOf="@+id/VWBTN"
+        app:layout_constraintStart_toStartOf="@+id/VWBTN"
+        app:layout_constraintTop_toTopOf="@+id/VWBTN"
+        app:layout_constraintVertical_bias="0.093"
+        app:srcCompat="@drawable/camera"
+        tools:ignore="MissingConstraints" />
+
+    <ImageView
+        android:id="@+id/imageView5"
+        android:layout_width="108dp"
+        android:layout_height="139dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="46dp"
+        android:layout_marginBottom="214dp"
+        app:layout_constraintBottom_toBottomOf="@+id/CreateMemoryButton"
+        app:layout_constraintStart_toStartOf="@+id/CreateMemoryButton"
+        app:layout_constraintTop_toBottomOf="@+id/PLNBTN"
+        app:srcCompat="@drawable/add"
+        tools:ignore="MissingConstraints" />
+
+
+    <ImageView
+        android:id="@+id/imageView7"
+        android:layout_width="75dp"
+        android:layout_height="112dp"
+        android:layout_marginEnd="32dp"
+        app:layout_constraintBottom_toBottomOf="@+id/toolbar2"
+        app:layout_constraintEnd_toEndOf="@+id/toolbar2"
+        app:srcCompat="@drawable/user"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="48dp"
+        android:text="Explore the world"
+        android:textColor="#F2EDED"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/toolbar2"
+        tools:ignore="MissingConstraints" />
+
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottomNavigationView"
+        android:layout_width="408dp"
+        android:layout_height="91dp"
+        android:layout_marginBottom="4dp"
+        android:background="#00BFA5"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="MissingConstraints" />
+
+    <Button
+        android:id="@+id/Settingsbutton"
+        android:layout_width="265dp"
+        android:layout_height="104dp"
+        android:backgroundTint="#00BFA5"
+        android:text="Setting "
+        app:layout_constraintBottom_toTopOf="@+id/bottomNavigationView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/VWBTN" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
